@@ -48,6 +48,16 @@
     justify-content: center;
 }
 
+#payCalculate {
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: rgb(56, 56, 56);
+}
+
+#calculateBtn {
+    margin-left: 10px;
+}
+
 html { font-size: 62.5%; }
 .createParty * { font-size: 1em;}
 

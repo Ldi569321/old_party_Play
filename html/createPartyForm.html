@@ -43,7 +43,7 @@
                 <a href="">로그인</a>
             </div>
             <div>
-                <a href="">회원가입</a>
+                <a href="registerForm.html">회원가입</a>
             </div>
         </div>
     </header>
@@ -80,13 +80,14 @@
                         진행 기간 <input type="date" id="createDate" readonly>~<input type="date" name="" id="maxDate"
                             required>
                     </label>
-                    <label for="">
-                        1일당 금액 <input type="number" name="" id="" required>
+                    <label for="" style="display: inline;">
+                        1일당 금액 <input type="number" name="" id="dayPay" required><button type="button" id="calculateBtn">계산</button>
+                        <div id="payCalculate">계산</div>
                     </label>
                 </div>
                 <div class="createPartyR">
                     <label for="">
-                    카카오톡 오픈채팅방 <br><input type="text" class="chatUrl" name="" id="" placeholder="파티를 만들기전 오픈채팅방을 만드세요" required>
+                    카카오톡 오픈채팅방 <br><input type="url" class="chatUrl" name="" id="" placeholder="파티를 만들기전 오픈채팅방을 만드세요" required>
                 </label>
                 <label for="">
                     오픈채팅방 비밀번호 <br><input type="text" class="chatPass" name="" id="" required>
