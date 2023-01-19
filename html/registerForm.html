@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/js/app.js"></script>
+    <link rel="stylesheet" media="all and (min-width:1200px)" href="./css/defaultPC.css">
+    <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/defaultMOBILE.css">
+    <link rel="stylesheet" href="./css/registerForm.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.2.1-web/css/all.min.css">
+    <script src="css/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    <title>PartyPlay</title>
+</head>
+
+<body>
+    <div class="menu" style="display: none;">
+        <div class="menuBox">
+            <div>
+                <a href="">내파티 관리</a>
+            </div>
+            <div>
+                <a href="supportForm.html">고객센터</a>
+            </div>
+            <div>
+                <a href="createPartyForm.html">파티 생성</a>
+            </div>
+        </div>
+    </div>
+
+    <header> <!-- 헤더(로고, 메뉴, 회원정보) -->
+        <div class="menubar">
+            <div><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="logo">
+            <a href="./mainForm.html">
+                <img src="/img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="account">
+            <div>
+                <a href="">로그인</a>    
+            </div>
+            <div>
+                <a href="">회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mainBox">
+        <aside> <!-- 왼쪽 광고 -->
+            <div class="ad1">
+                <div>광고1</div>
+            </div>
+        </aside>
+
+        <main> <!-- 메인 화면(카테고리, 파티칸) -->
+            <form action="" method="">
+                <div class="regBox">
+                    <div class="regInfo">
+                        <div>
+                            <label>
+                                아이디: <input type="text" name="" id="" placeholder="아이디를 입력해주세요">
+                            </label>
+                            <input class="overlapCheck" type="button" name="" id="" value="중복확인">
+                            <div class="additional">아이디는 6~15개의 알파벳과 숫자로 구성되야 합니다.</div>
+                        </div>
+                        <br>
+
+                        <label>
+                            비밀번호: <input type="password" name="" id="" placeholder="비밀번호를 입력해주세요">
+                        </label>
+                        <div class="additional">비밀번호는 6~15개의 알파벳과 숫자로 구성되야 합니다.</div>
+                        <br>
+
+                        <label>
+                            비밀번호 재확인: <input type="password" placeholder="비밀번호를 다시입력해주세요">
+                        </label>
+                        <div class="additional">비밀 번호를 다시 입력해 주십시오.</div>
+                        <br>
+
+                        <label>
+                            이름: <input type="text" name="" id="" placeholder="이름을 입력해 주세요">
+                        </label>
+                        <div class="additional">실제 이름을 입력하여 주세요.</div>
+                        <br>
+
+                        <label>
+                            전화번호: <input type="" name="" id="" placeholder="전화번호를 입력해주세요">
+                        </label>
+                        <div class="additional">알림 및 중복 확인용 입니다.</div>
+                        <br>
+                    </div>
+                    <div class="regHardInfo">
+                        <div class="provision">회원가입을 완료하면 회원님의 정보가 3년간 (주)파티플레이에 저장되며 회원 탈퇴시 1년후 회원님의 정보가 삭제됩니다.</div>
+                        <label> 위 사항에 동의 하십니까?
+                            <label> 네
+                                <input type="radio" name="individualInfo">
+                            </label>
+                            <label> 아니요
+                                <input type="radio" name="individualInfo">
+                            </label>
+                        </label>
+                        <div class="provision">전화번호로 파티플레이의 파티 알림, 이벤트 알림에 동의 하십니까?</div>
+                        <label> 위 사항에 동의 하십니까?
+                            <label> 네
+                                <input type="radio" name="notification">
+                            </label>
+                            <label> 아니요
+                                <input type="radio" name="notification">
+                            </label>
+                            <input type="submit" class="regSubmit" name="" id="" value="가입">
+                    </div>
+            </form>
+    </div>
+    </main>
+
+    <aside> <!-- 오른쪽 광고 -->
+        <div class="ad2">
+            <div>광고2</div>
+        </div>
+    </aside>
+    </div>
+    <footer> <!-- 정보칸 -->
+        <div class="information">정보</div>
+    </footer>
+</body>
+
+</html>

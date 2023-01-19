@@ -1,0 +1,57 @@
+.main{
+}
+
+.cat {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.cat input {
+    background-color: transparent;
+    font-size: 1em;
+    min-width: 16.08vw;
+    max-width: 16.1vw;
+    background-color: #3282B8;
+    color: white;
+    border: 1px solid black;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.party{
+    padding-top: 70px;
+}
+
+.party button {
+    min-width: 200px;
+    min-height: 100px;
+    width: 19.5vw;
+    height: 10vw;
+    margin: 1% 1% 0% 1%;
+    background-color: #0F4C75;
+}
+
+.party input{
+    margin: 1vw auto;
+    background-color: #3282B8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#checkCat { display: none; }
+#checkCat:checked ~ .menubars { display: block; } 
+.menubars { display: none; }
+
+#checkVideo { display: none; }
+#checkVideo:checked ~ .menubars { display: block; } 
+.menubars { display: none; }
+
+#checkMusic { display: none; }
+#checkMusic:checked ~ .menubars { display: block; } 
+.menubars { display: none; }
+
+#checkEtc { display: none; }
+#checkEtc:checked ~ .menubars { display: block; } 
+.menubars { display: none; }

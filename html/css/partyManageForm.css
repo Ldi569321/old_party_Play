@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 50px 10px;
+    height: 72vh;
+}
+
+.partyManage {
+    text-align: center;
+}
+
+.submit{
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
