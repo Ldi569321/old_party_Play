@@ -1,4 +1,6 @@
-.main{
+main{
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .cat {

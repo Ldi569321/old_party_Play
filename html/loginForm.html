@@ -8,8 +8,7 @@
     <script defer src="/js/app.js"></script>
     <link rel="stylesheet" media="all and (min-width:1200px)" href="./css/defaultPC.css">
     <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/defaultMOBILE.css">
-    <link rel="stylesheet" href="./css/mainForm.css">
-    <link rel="stylesheet" href="./css/partyJoinForm.css">
+    <link rel="stylesheet" href="./css/loginForm.css">
     <link rel="stylesheet" href="./css/fontawesome-free-6.2.1-web/css/all.min.css">
     <script src="css/fontawesome-free-6.2.1-web/js/all.min.js"></script>
     <title>PartyPlay</title>
@@ -56,34 +55,22 @@
             </div>
         </aside>
 
-        <main>
-            <form action="#" method="post"> <!-- 메인 화면(카테고리, 파티칸) -->
-                <div class="partyJoin">
-                    <h1><strong>파티 가입</strong></h1>
-                    <div class="partyJoinInput">
-                        <input type="text" id="id" placeholder="전달할 아이디"><br>
-                        <select id="payment" required>
-                            <option value="" selected>결제 수단 선택</option>
-                            <option value="신용카드 또는 체크카드 결제">신용카드 또는 체크카드 결제</option>
-                            <option value="PAYCO">PAYCO</option>
-                            <option value="계좌 연결">계좌 연결</option>
-                        </select>
+        <main> <!-- 메인 화면(카테고리, 파티칸) -->
+            <img src="/img/logo.png" alt="">
+            <form action="" method="">
+                <div class="loginBox">
+                    <input class="loginInner" type="text" name="" id="" placeholder="아이디를 입력해 주세요">
+                    <br>
+                    <input class="loginInner" type="text" name="" id="" placeholder="비밀번호를 입력해 주세요">
+                    <br>
+                    <div class="AChelp">
+                        <label class="autologin">
+                            자동 로그인<input type="checkbox" name="" id="">
+                        </label>
+                        <a class="findAccount" href="findAccountForm.html">아이디/비밀번호 찾기</a>
                     </div>
-                    <br><br>
-
-                    <h3>파티 유지 기간</h3>
-                    <div class="partyJoinInput">
-                        <input type="month">
-                        <br><br>
-                    </div>
-
-                    <h3>연락수단</h3>
-                    <div class="partyJoinInput">
-                        <input type="email" id="email" placeholder="메일">
-                        <input type="tel" id="" placeholder="전화번호"><br><br><br>
-                    </div>
-
-                    <input type="submit" class="submit" id="submit" src="#" value="제출">
+                    <br>
+                    <input type="submit" value="로그인">
                 </div>
             </form>
         </main>
@@ -92,8 +79,8 @@
             <div class="ad2">
                 <div>광고2</div>
             </div>
-        </aside>
     </div>
+    </aside>
     <footer> <!-- 정보칸 -->
         <div class="information">
             <div>PartyPlay는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 파티정보, 구매에 관한 의무와 책임은 판매자에게 있습니다.</div>

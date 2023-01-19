@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     margin: 0px 10px 53px 10px;
     padding-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .menubar {
@@ -112,7 +112,6 @@ header {
 .ad1 div {
     width: 100%;
     border: 1px solid black;
-    margin-right: 10px;
 }
 
 main {
@@ -142,11 +141,17 @@ main {
 /* 정보 부분 */
 footer {
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 99.8vw;
     position: absolute;
     bottom: 0%;
-    display: block;
+    margin: 0;
+}
+
+.information {
+    padding: 10px;
+    font-size: 0.8em;
+    color: #30424d;
 }
 
 @media (max-width: 1200px) {
