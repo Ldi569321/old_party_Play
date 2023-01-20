@@ -45,7 +45,7 @@ if (window.location.pathname == '/html/createPartyForm.html') {
             payCal.innerText = `${dayCount}일 × ${dayPay}원 = ${result}원`
         }
     })
-}/* 
+}
 
 const adBox = document.querySelectorAll(".adBox");
 
@@ -85,4 +85,4 @@ window.addEventListener('resize', function(){
             adBox[1].style.backgroundImage = AdMobile();
         }
 	}, delay);
-}); */
+}); 
