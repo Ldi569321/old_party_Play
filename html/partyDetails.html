@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +7,11 @@
     <script defer src="/js/app.js"></script>
     <link rel="stylesheet" media="all and (min-width:1200px)" href="./css/defaultPC.css">
     <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/defaultMOBILE.css">
-    <link rel="stylesheet" href="./css/partyManageForm.css">
+    <link rel="stylesheet" href="./css/partyDetails.css">
     <link rel="stylesheet" href="./css/fontawesome-free-6.2.1-web/css/all.min.css">
     <script src="css/fontawesome-free-6.2.1-web/js/all.min.js"></script>
     <title>PartyPlay</title>
 </head>
-
 <body>
     <div class="menu" style="display: none;">
         <div class="menuBox">
@@ -55,31 +53,14 @@
             </div>
         </aside>
 
-        <main> <!-- 메인 화면(카테고리, 파티칸) -->
-            <div class="partyManage">
-                <form action="#" method="post">
-                    <h1><strong>파티 관리</strong></h1>
-                    <input type="text" id="title" placeholder="제목"><br>
-                    <select name="category" id="category" required>
-                        <option value="category" selected>카테고리 선택</option>
-                        <option value="video">영상</option>
-                        <option value="music">음악</option>
-                        <option value="Etc">기타</option>
-                    </select><br>
-                    <input type="text" id="content" placeholder="내용">
-                    <!-- 원래 있던 내용을 javascript로 받아오고 새로 작성한 내용은 수정 버튼을 누를 시 업데이트 된다. -->
-                    <br><br>
-    
-                    <h3>파티 유지 기간</h3>
-                    <input type="date">
-                    <br><br>
-    
-                    <h3>하루당 가격 지정</h3>
-                    <div class="price"><input type="number" min="0" max="100000"> 원</div>
-                    <br><br><br>
-    
-                <input type="submit" class="submit" id="modify" src="#" value="수정">
-                </form>
+        <main>
+            <div class="partyDetails">
+                <h1>파티 제목</h1>
+                <input type="text" class="content" value="(javascript로 받아올 예정)">
+            </div>
+
+            <div class="confirm">
+                <a href="mainForm.html">확인</a>
             </div>
         </main>
 
@@ -92,6 +73,6 @@
     <footer> <!-- 정보칸 -->
         <div class="information">정보</div>
     </footer>
+    
 </body>
-
 </html>

@@ -1,71 +1,49 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-.title h1{
-    text-align: center;
-    padding-top: 50px;
-}
-.title h1::after{
-    content:"";
-    height: 4px;
-    width: 230px;
-    background-color: #000;
-    display: block;
-    margin: auto;
-}
-.service{
-    width: 85%;
+.service {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 75px auto;
-    text-align: center;
-}
-.card{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
-    margin: 0px 20px;
-    padding: 20px 20px;
-    background-color: #efefef;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s ease;
+    align-items: center;
+    text-align: center;
 }
-.card:hover{
-    background-color: #b8d4de;
-    transition: 0.4s ease;
-}
-.card .icon{
+
+.dispute2 input{
+    width: 40vw;
+    padding: 16px 0 12px;
+    background: none transparent;
+    line-height: 20px;
+    text-indent: 12px;
+    text-align: center;
+    background-color: white;
+    border: none;
     font-size: 1em;
-    margin-bottom: 10px;
 }
-.card h2{
-    font-size: 1.5em;
-    color: #0F4C75;
+
+.dispute select{
+    width: 40vw;
+    padding: 16px 0 12px;
+    background: none transparent;
+    line-height: 20px;
+    font-weight: 700;
+    text-indent: 12px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-size: 1em;
+}
+
+.submit{
+    margin-top: 20px;
     margin-bottom: 20px;
-}
-.card p{
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    color: #5e5e5e;
-}
-.button{
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #fff;
-    background-color: #3282B8;
-    padding: 8px 12px;
-    border-radius: 5px;
-    letter-spacing: 1px;
+    text-align: center;
+    background: white;
+    color: #1B262C;
+    border: none;
+    border-radius: 10px;
+    border-color: white; 
+    font-size: 1.4em;
     transition: 0.4s ease;
+    font-size: 22px;
 }
-.button:hover{
-    background-color: #0F4C75;
+.submit:hover{
+    background-color: #3282B8;
     transition: 0.4s ease;
 }

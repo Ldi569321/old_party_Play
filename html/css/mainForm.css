@@ -1,4 +1,4 @@
-main{
+main {
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -34,8 +34,12 @@ main{
     background-color: #0F4C75;
 }
 
+.party h3{
+    color: white;
+}
+
 .party input{
-    margin: 1vw auto;
+    margin-bottom: 1vw;
     background-color: #3282B8;
     color: white;
     border: none;

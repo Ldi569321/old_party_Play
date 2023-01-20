@@ -8,7 +8,8 @@
     <script defer src="/js/app.js"></script>
     <link rel="stylesheet" media="all and (min-width:1200px)" href="./css/defaultPC.css">
     <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/defaultMOBILE.css">
-    <link rel="stylesheet" href="./css/partyManageForm.css">
+    <link rel="stylesheet" href="./css/mainForm.css">
+    <link rel="stylesheet" href="./css/calculateForm.css">
     <link rel="stylesheet" href="./css/fontawesome-free-6.2.1-web/css/all.min.css">
     <script src="css/fontawesome-free-6.2.1-web/js/all.min.js"></script>
     <title>PartyPlay</title>
@@ -40,7 +41,7 @@
         </div>
         <div class="account">
             <div>
-                <a href="">로그인</a>    
+                <a href="">로그인</a>
             </div>
             <div>
                 <a href="">회원가입</a>
@@ -55,33 +56,36 @@
             </div>
         </aside>
 
-        <main> <!-- 메인 화면(카테고리, 파티칸) -->
-            <div class="partyManage">
-                <form action="#" method="post">
-                    <h1><strong>파티 관리</strong></h1>
-                    <input type="text" id="title" placeholder="제목"><br>
-                    <select name="category" id="category" required>
-                        <option value="category" selected>카테고리 선택</option>
-                        <option value="video">영상</option>
-                        <option value="music">음악</option>
-                        <option value="Etc">기타</option>
-                    </select><br>
-                    <input type="text" id="content" placeholder="내용">
-                    <!-- 원래 있던 내용을 javascript로 받아오고 새로 작성한 내용은 수정 버튼을 누를 시 업데이트 된다. -->
-                    <br><br>
-    
-                    <h3>파티 유지 기간</h3>
-                    <input type="date">
-                    <br><br>
-    
-                    <h3>하루당 가격 지정</h3>
-                    <div class="price"><input type="number" min="0" max="100000"> 원</div>
-                    <br><br><br>
-    
-                <input type="submit" class="submit" id="modify" src="#" value="수정">
-                </form>
+
+
+
+        <main>
+            <div class="service">
+            <form action="#"> <!-- 인 화면(카테고리, 파티칸) -->
+                    <h1>정산관리</h1><br>
+                    <h3>지급계좌설정</h3>
+                    <div class="calculate">
+                        <select id="card" required>
+                            <option value="" selected>지급계좌설정</option>
+                            <option value="신용카드 또는 체크카드 결제">신용카드 또는 체크카드 결제</option>
+                            <option value="PAYCO">PAYCO</option>
+                            <option value="계좌 연결">계좌 연결</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <h3>지급가능금액</h3>
+                    <div class="calculate2">
+                        <input type="number" min="0" max="1000000"><br>
+                    </div>
+
+                    <input type="submit" class="submit" value="지급하기">
+            </form>
             </div>
         </main>
+
+
+
 
         <aside> <!-- 오른쪽 광고 -->
             <div class="ad2">

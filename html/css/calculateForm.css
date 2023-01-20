@@ -1,20 +1,11 @@
-main {
-    overflow: scroll;
-    overflow-x: scroll;
-}
-
-.partyManage {
+.service {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.partyManage {
-    text-align: center;
-}
-
-.partyManage input{
+.calculate2 input{
     width: 40vw;
     padding: 16px 0 12px;
     background: none transparent;
@@ -24,10 +15,9 @@ main {
     background-color: white;
     border: none;
     font-size: 1em;
-    margin-bottom: 20px;
 }
 
-.partyManage select{
+.calculate select{
     width: 40vw;
     padding: 16px 0 12px;
     background: none transparent;
@@ -40,30 +30,20 @@ main {
     font-size: 1em;
 }
 
-input#content {
-    margin-top: 20px;
-    min-height: 20vw;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 .submit{
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+    background: white;
     color: #1B262C;
     border: none;
-    border-radius: 50px;
-    border-color: #0F4C75; 
+    border-radius: 10px;
+    border-color: white; 
     font-size: 1.4em;
     transition: 0.4s ease;
+    font-size: 22px;
 }
-
-.submit:hover {
-    background-color: #d6d6d6;
+.submit:hover{
+    background-color: #3282B8;
     transition: 0.4s ease;
 }
