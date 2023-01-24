@@ -79,17 +79,27 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .account div {
-    flex: 0.5;
+    flex: 0.4;
     text-align: center;
+    width: 50px;
+    background-color: #1B262C;
+    border-radius: 10px;
+    display: block;
+    margin: 0px;
 }
 
 .account div a {
     text-decoration-line: none;
-    color: #1B262C;
+    color: white;
+    display: block;
+    padding: 10px;
 }
+
+
 
 .menuSlideIn{
     animation: menuSlideIn 0.5s ease-in;
