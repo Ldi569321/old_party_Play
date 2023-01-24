@@ -49,12 +49,12 @@ if (window.location.pathname == '/html/createPartyForm.html') {
 
 const adBox = document.querySelectorAll(".ad");
 function AdPC() {
-    const adSetNum = Math.floor(Math.random()*5+1);
+    const adSetNum = Math.floor(Math.random() * 5 + 1);
     return `/html/img/PC_${adSetNum}.png`;
 }
 
 function AdMobile() {
-    const adSetNum = Math.floor(Math.random()*5+1);
+    const adSetNum = Math.floor(Math.random() * 5 + 1);
     return `/html/img/MOBILE_${adSetNum}.png`;
 }
 
@@ -71,15 +71,15 @@ window.addEventListener('DOMContentLoaded', function () {
 let delay = 300;
 let timer = null;
 
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function () {
     clearTimeout(timer);
-	timer = setTimeout(function(){
-		if (window.innerWidth >= 1200) {
+    timer = setTimeout(function () {
+        if (window.innerWidth >= 1200) {
             adBox[0].src = AdPC();
             adBox[1].src = AdPC();
         } else if (window.innerWidth < 1200) {
             adBox[0].src = AdMobile();
             adBox[1].src = AdMobile();
         }
-	}, delay);
+    }, delay);
 });
