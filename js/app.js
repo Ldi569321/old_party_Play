@@ -84,4 +84,4 @@ window.addEventListener('resize', function(){
             adBox[1].style.backgroundImage = AdMobile();
         }
 	}, delay);
-}); 
+});
