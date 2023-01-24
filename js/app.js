@@ -2,10 +2,20 @@ const menuBtn = document.querySelector(".menubar div");
 const modal = document.querySelector(".menu");
 menuBtn.addEventListener("click", () => {
     modal.style.display = "block";
+
+    modal.classList.remove("menuSlideOut"),
+        void modal.offsetWidth;
+    void modal.offsetWidth,
+        modal.classList.add("menuSlideIn");
 })
 
 modal.addEventListener("click", () => {
-    modal.style.display = "none";
+    void modal.offsetWidth,
+        modal.classList.add("menuSlideOut");
+
+    modal.classList.remove("menuSlideIn"),
+        void modal.offsetWidth;
+    setTimeout(function () { modal.style.display = "none"; }, 450);
 })
 
 if (window.location.pathname == '/html/createPartyForm.html') {
@@ -83,3 +93,4 @@ window.addEventListener('resize', function () {
         }
     }, delay);
 });
+

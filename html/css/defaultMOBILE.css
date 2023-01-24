@@ -11,6 +11,7 @@
 
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 /* 헤드부분 */
@@ -90,6 +91,33 @@ header {
     color: #1B262C;
 }
 
+.menuSlideIn{
+    animation: menuSlideIn 0.5s ease-in;
+}
+
+.menuSlideOut{
+    animation: menuSlideOut 0.5s ease-in;
+}
+
+
+@keyframes menuSlideIn {
+    from{
+        left: -50%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes menuSlideOut {
+    from{
+        left: 0%;
+    }
+    to{
+        left: -50%;
+    }
+}
+
 
 
 /* 메인부분 */
@@ -153,8 +181,6 @@ footer {
 @media (max-width: 1200px) {
     footer{ height: 9vh;}
 }
-
-
 
 /* 설정 */
 html { font-size: 62.5%; }

@@ -89,6 +89,58 @@ header {
     color: #1B262C;
 }
 
+.menuSlideIn{
+    animation: menuSlideIn 0.5s ease-in;
+}
+
+.menuSlideOut{
+    animation: menuSlideOut 0.5s ease-in;
+}
+
+@keyframes menuSlideIn {
+    from{
+        left: -50%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes menuSlideOut {
+    from{
+        left: 0%;
+    }
+    to{
+        left: -50%;
+    }
+}
+
+
+.menuBIn {
+    animation: menuBIn 0.5s ease-in;
+}
+
+.menuBOut {
+    animation: menuBOut 0.5s ease-in;
+}
+
+@keyframes menuBIn {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes menuBOut {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
 
 /* 메인부분 */
 .mainBox {
