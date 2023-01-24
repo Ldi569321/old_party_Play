@@ -47,26 +47,24 @@ if (window.location.pathname == '/html/createPartyForm.html') {
     })
 }
 
-const adBox = document.querySelectorAll(".adBox");
+const adBox = document.querySelectorAll(".ad");
 function AdPC() {
     const adSetNum = Math.floor(Math.random()*5+1);
-    const adSetUrl = `url(./img/PC_AD${adSetNum}.png)`;
-    return adSetUrl;
+    return `/html/img/PC_${adSetNum}.png`;
 }
 
 function AdMobile() {
     const adSetNum = Math.floor(Math.random()*5+1);
-    const adSetUrl = `url(./img/MOBILE_AD${adSetNum}.png)`;
-    return adSetUrl;
+    return `/html/img/MOBILE_${adSetNum}.png`;
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-    if (screen.width >= 1100) {
-        adBox[0].style.backgroundImage = AdPC();
-        adBox[1].style.backgroundImage = AdPC();
-    } else if (screen.width < 1100) {
-        adBox[0].style.backgroundImage = AdMobile();
-        adBox[1].style.backgroundImage = AdMobile();
+    if (window.innerWidth >= 1200) {
+        adBox[0].src = AdPC();
+        adBox[1].src = AdPC();
+    } else if (window.innerWidth < 1200) {
+        adBox[0].src = AdMobile();
+        adBox[1].src = AdMobile();
     }
 });
 
@@ -76,12 +74,12 @@ let timer = null;
 window.addEventListener('resize', function(){
     clearTimeout(timer);
 	timer = setTimeout(function(){
-		if (screen.width >= 1100) {
-            adBox[0].style.backgroundImage = AdPC();
-            adBox[1].style.backgroundImage = AdPC();
-        } else if (screen.width < 1100) {
-            adBox[0].style.backgroundImage = AdMobile();
-            adBox[1].style.backgroundImage = AdMobile();
+		if (window.innerWidth >= 1200) {
+            adBox[0].src = AdPC();
+            adBox[1].src = AdPC();
+        } else if (window.innerWidth < 1200) {
+            adBox[0].src = AdMobile();
+            adBox[1].src = AdMobile();
         }
 	}, delay);
 });

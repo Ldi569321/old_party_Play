@@ -109,10 +109,6 @@ header {
     display: flex;
 }
 
-.ad1 div {
-    width: 100%;
-    border: 1px solid black;
-}
 
 main {
     border: 1px solid black;
@@ -130,9 +126,9 @@ main {
     margin-left: 10px;
 }
 
-.ad2 div {
+.ad {
     width: 100%;
-    border: 1px solid black;
+    background-repeat: no-repeat;
 }
 
 

@@ -107,11 +107,6 @@ header {
     margin-right: 10px;
 }
 
-.ad1 div {
-    width: 100%;
-    height: 50vh;
-}
-
 
 main {
     border: 1px solid black;
@@ -129,11 +124,9 @@ main {
     margin-left: 10px;
 }
 
-.adBox {
+.ad {
     width: 100%;
-    height: 50vh;
     background-repeat: no-repeat;
-    background-image: url(/img/PC_AD1.png);
 }
 
 
