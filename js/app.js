@@ -93,4 +93,3 @@ window.addEventListener('resize', function () {
         }
     }, delay);
 });
-
