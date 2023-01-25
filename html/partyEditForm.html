@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script defer src="/js/app.js"></script>
     <link rel="stylesheet" media="all and (min-width:1200px)" href="./css/defaultPC.css">
     <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/defaultMOBILE.css">
-    <link rel="stylesheet" href="./css/createPartyForm.css">
+    <link rel="stylesheet" href="./css/partyEditForm.css">
     <link rel="stylesheet" href="./css/fontawesome-free-6.2.1-web/css/all.min.css">
     <script src="css/fontawesome-free-6.2.1-web/js/all.min.js"></script>
     <title>PartyPlay</title>
@@ -40,7 +40,7 @@
         </div>
         <div class="account">
             <div>
-                <a href="loginForm.html">로그인</a>
+                <a href="loginForm.html">로그인</a>    
             </div>
             <div>
                 <a href="registerForm.html">회원가입</a>
@@ -56,48 +56,48 @@
         </aside>
 
         <main> <!-- 메인 화면(카테고리, 파티칸) -->
-            <div class="createPartyTop">
-            <h1>파티 생성</h1>
-        </div>
+            <div class="partyEditTitle">
+                <h1>파티 수정</h1>
+            </div>
             <form action="">
-                <div class="createParty">
-                    <div class="createPartyL">
+                <div class="partyEdit">
+                    <div class="partyEditL">
                     <label for="">
                         카테고리 <select name="" id="" required>
-                            <option value="" selected>카테고리를 선택해 주세요</option>
+                            <option value="" selected>카테고리를 선택해 주세요<!-- Java Script, 파티의 원래 카테고리 받아오기 --></option>
                             <option value="video">영상</option>
                             <option value="music">음악</option>
                             <option value="etc">기타</option>
                         </select>
                     </label>
                     <label for="">
-                        파티이름 <input type="text" name="" id="" required>
+                        파티이름 <input type="text" name="" id="" required><!-- Java Script, 파티의 원래 제목 받아오기 -->
                     </label>
                     <label for="">
-                        모집인원 <input type="number" name="" id="" min="1" max="20" required>
+                        모집인원 <input type="number" name="" id="" min="1" max="20" required><!-- Java Script, 파티의 원래 모집인원 받아오기 -->
                     </label>
                     <label for="">
-                        진행 기간 <input type="date" id="createDate" readonly>~<input type="date" name="" id="maxDate"
-                            required>
+                        진행 기간 <input type="date" id="EditDate" readonly>~<input type="date" name="" id="maxDate"
+                            required><!-- Java Script, 파티의 원래 진행 기간 받아오기 -->
                     </label>
                     <label for="" style="display: inline;">
                         1일당 금액 <input type="number" name="" id="dayPay" required><button type="button" id="calculateBtn">계산</button>
-                        <div id="payCalculate">n일 × n원 = n원</div>
+                        <div id="payCalculate">n일 × n원 = n원</div><!-- Java Script, 파티의 원래 일일당 금액 받아오기 -->
                     </label>
                 </div>
-                <div class="createPartyR">
+                    <div class="EditPartyR">
+                        <label for="">
+                        카카오톡 오픈채팅방 <br><input type="url" class="chatUrl" name="" id="" placeholder="파티를 만들기전 오픈채팅방을 만드세요" required>
+                    </label><!-- Java Script, 파티의 원래 오픈채팅방 받아오기 -->
                     <label for="">
-                    카카오톡 오픈채팅방 <br><input type="url" class="chatUrl" name="" id="" placeholder="파티를 만들기전 오픈채팅방을 만드세요" required>
-                </label>
-                <label for="">
-                    오픈채팅방 비밀번호 <br><input type="text" class="chatPass" name="" id="" required>
-                </label>
-                <label for="">
-                    부가 설명 <br><textarea style="resize: none;" name="" id="" cols="50" rows="5"></textarea>
-                </label>
-                    <input type="submit" class="submit" value="생성하기">
+                        오픈채팅방 비밀번호 <br><input type="text" class="chatPass" name="" id="" required>
+                    </label><!-- Java Script, 파티의 원래 오픈채팅방 비밀번호 받아오기 -->
+                    <label for="">
+                        부가 설명 <br><textarea style="resize: none;" name="" id="" cols="50" rows="5"></textarea>
+                    </label><!-- Java Script, 파티의 원래 카테고리 받아오기 -->
+                        <input type="submit" class="submit" value="수정하기">
+                    </div>
                 </div>
-            </div>
             </form>
         </main>
 
@@ -115,6 +115,5 @@
         </div>
     </footer>
 </body>
-<script src="/js/app.js"></script>
 
 </html>

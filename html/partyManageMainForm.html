@@ -57,73 +57,78 @@
 
         <main> <!-- 파티 관리 -->
             <div class="partyManageMain" id="partyManageMain">
-                <div class="partyManageListMain">
-                    <strong class="partyManageCheck">내 파티 관리 &nbsp;My Party Management</strong>
-                    <p class="sub_copy">내 파티를 관리하실 수 있습니다.</p>
-                    <p class="sub_copy2">※ 개인정보 유출에 주의하세요! </p>
-                    <div class="partyManageList_common partyManageList_style">
-                        <table>
-                            <colgroup>
-                                <col style="width: 10%;">
-                                <col style="width: 10%;">
-                                <col style="width: 10%;">
-                                <col style="width: 10%;">
-                                <col style="width: 10%;">
-                                <col style="width: 10%;">
-                                <col style="width: 10%;">
-                                <col style="width: 10%;">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">파티 번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">총금액(일금액)</th>
-                                    <th scope="col">모집 인원(총 인원)</th>
-                                    <th scope="col">종료일(남은 기간)</th>
-                                    <th scope="col">파티 생성일</th>
-                                    <th scope="col">파티 상태</th>
-                                    <th scope="col">관리</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr name="partyList" class="hide">
-                                    <td name="partyNumber">10</td>
-                                    <td name="partyTitle" class="t_left" id="partyTitle">
-                                        도제프로젝트test도제프로젝트test도제프로젝트test도제프로젝트<!-- Java Script -->
-                                    </td>
-                                    <td name="partyPay">nn원(dd원)<!-- Java Script, 계산기 --></td>
-                                    <td name="partyMember">hire member(all)<!-- Java Script, 계산기 --></td>
-                                    <td name="partyDate">2023.01.31(left date)<!-- java Script, 계산기 --></td>
-                                    <td name="partyBirth">2023.01.10</td>
-                                    <td name="partyState">
-                                        모집중  <!-- Java Script -->
-                                    </td>
-                                    <td scope="col"><a href="partyManageForm.html" class="partyEdit">수정</a></td>
-                                </tr>
-                                <tr name="partylist_no" class="">
-                                    <td colspan="8">
-                                        <h1><strong>Party Play</strong></h1>
-                                        <p class="sub_copy3">목록은 여기까지 입니다.</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="paging_wrap">
-                        <ul id="partyPaging" class="pagingUl" style="display: none;">
-                            <li><a class="" name="0.1" order="1" href="">1</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="2" href="">2</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="3" href="">3</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="4" href="">4</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="5" href="">5</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="6" href="">6</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="7" href="">7</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="8" href="">8</a></li><!-- Java Script-->
-                            <li><a class="" name="0.2" order="9" href="">9</a></li><!-- Java Script-->
-                        </ul>
+                <div class="partyManageMain" id="partyManageMain">
+                    <div class="partyManageListMain">
+                        <strong class="partyManageCheck">내 파티 관리 &nbsp;My Party Management</strong>
+                        <p class="sub_copy">내 파티를 관리하실 수 있습니다.</p>
+                        <p class="sub_copy2">※ 개인정보 유출에 주의하세요! </p>
+                        <div class="partyManageList_common partyManageList_style">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">파티 번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">총금액(일금액)</th>
+                                        <th scope="col">모집 인원(총 인원)</th>
+                                        <th scope="col">종료일(남은 기간)</th>
+                                        <th scope="col">파티 생성일</th>
+                                        <th scope="col">파티 상태</th>
+                                        <th scope="col">관리</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr name="partyList" class="hide">
+                                        <td name="partyNumber">10</td>
+                                        <td name="partyTitle" class="t_left" id="partyTitle">
+                                            도제프로젝트test도제프로젝트test도제프로젝트test도제프로젝트<!-- Java Script -->
+                                        </td>
+                                        <td name="partyPay">nn원(dd원)<!-- Java Script, 계산기 --></td>
+                                        <td name="partyMember">hire member(all)<!-- Java Script, 계산기 --></td>
+                                        <td name="partyDate">2023.01.31(left date)<!-- java Script, 계산기 --></td>
+                                        <td name="partyBirth">2023.01.10</td>
+                                        <td name="partyState">
+                                            모집중  <!-- Java Script -->
+                                        </td>
+                                        <td scope="col">
+                                            <a href="partyEditForm.html" class="partyEdit">수정</a>
+                                            <a href="" class="partyManagePartyDrop" id="partyManagePartyDrop">삭제</a><!-- java Script, 경고문 출력, db삭제 -->
+                                        </td>
+                                    </tr>
+                                    <tr name="partylist_no" class="">
+                                        <td colspan="8">
+                                            <h1><strong>Party Play</strong></h1>
+                                            <p class="sub_copy3" id="partylastList">목록은 여기까지 입니다.</p>
+                                            <a href="createPartyForm.html" class="partyManageMainCreate" id="partyManageMainCreate">파티 생성하기</a><br><br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="paging_wrap">
+                            <ul id="partyPaging" class="pagingUl" style="display: none;">
+                                <li><a class="" name="0.1" order="1" href="">1</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="2" href="">2</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="3" href="">3</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="4" href="">4</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="5" href="">5</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="6" href="">6</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="7" href="">7</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="8" href="">8</a></li><!-- Java Script-->
+                                <li><a class="" name="0.2" order="9" href="">9</a></li><!-- Java Script-->
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
         </main>
 
         <aside> <!-- 오른쪽 광고 -->

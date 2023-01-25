@@ -1,5 +1,6 @@
 main {
     padding: 20px;
+    background-color: white;
 }
 
 .help_content_bx .content_bx_st {
@@ -65,15 +66,22 @@ main {
     word-break: break-all;
 }
 
-.help_tb1_style03 th{
+.help_tb1_style03 th {
     padding: 14px 5px 15px 19px;
 }
 
-.DetailsSee {
-    background-color: #3282B8;
+.help {
+    
+    flex: 0.3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.help div a {
+    text-decoration-line: none;
+    background-color: #28313d;
     color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    display: block;
+    padding: 5px;
 }
