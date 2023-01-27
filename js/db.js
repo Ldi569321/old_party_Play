@@ -7,26 +7,5 @@ const conn = {  // mysql 접속 설정
     database: 'partyPlay'
 };
 
-let connection = mysql.createConnection(conn); // DB 커넥션 생성
+var connection = mysql.createConnection(conn); // DB 커넥션 생성
 connection.connect();   // DB 접속
- 
-let sql = "INSERT INTO `account` (`id`,`password`,`passwordCheck`,`name`,`tel`, `Notification`) value ('?','?','?','?','?',?)";
- 
-connection.query(sql, function (err, results, fields) {
-    if (err) {
-        console.log(err);
-    }
-    console.log(results);
-});
- 
-sql = "SELECT * FROM account";
- 
-connection.query(sql, function (err, results, fields) { 
-    if (err) {
-        console.log(err);
-    }
-    console.log(results);
-});
- 
- 
-connection.end(); // DB 접속 종료

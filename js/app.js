@@ -94,5 +94,3 @@ window.addEventListener('resize', function () {
     }, delay);
 });
 
-const db = require("./db");
-
