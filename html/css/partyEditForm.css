@@ -1,25 +1,25 @@
-.createParty {
+.partyEdit {
     display: flex;
     flex-direction: row;
 }
 
-.createParty label {
+.partyEdit label {
     margin: 7px;
 }
 
-.createPartyL {
+.partyEditL {
     flex: 0.5;
     display: flex;
     flex-direction: column;
 }
 
-.createPartyR {
+.partyEditR {
     flex: 0.5;
     display: flex;
     flex-direction: column;
 }
 
-.createPartyR label {
+.partyEditR label {
     margin: 0px 0px 12px 0px;
 }
 
@@ -43,7 +43,7 @@
     width: 30vw;
 }
 
-.createPartyTop {
+.partyEditTop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +60,7 @@
 }
 
 html { font-size: 62.5%; }
-.createParty * { font-size: 1em;}
+.partyEdit * { font-size: 1em;}
 
 @media (max-width: 300px) {
     html { font-size: 50%; }
@@ -80,10 +80,10 @@ html { font-size: 62.5%; }
 
 @media (min-width:1200px){
 
-    .createPartyL label {
+    .partyEditL label {
         margin: 20px 0px;
     }
-    .createPartyR label {
+    .partyEditR label {
         margin: 24px 0px;
     }
 }

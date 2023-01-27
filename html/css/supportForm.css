@@ -48,15 +48,14 @@
     transition: 0.4s ease;
 }
 
-.help{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.help div a{
+.record{
+    border: 1px solid black;
+    color:#28313d;
     text-decoration-line: none;
-    background-color: #28313d;
-    color: white;
-    display: block;
-    padding: 5px;
+    background-color: white;
+    font-size: 22px;
+}
+.record:hover{
+    background-color: #BBE1FA;
+    transition: 0.4s ease;
 }

@@ -9,7 +9,7 @@ main{
 .partyManageMain .partyManageListMain{
     position: relative;
     background-color: white;
-    padding: 27px 40px 300px 25px;
+    padding: 27px 40px 200px 25px;
 }
 
 .partyManageMain .partyManageListMain .partyManageCheck{
@@ -82,15 +82,15 @@ main{
     word-break: break-all;
 }
 
+.partyDetails {
+    text-decoration: none; color: black;
+}
+
+.partyDetails:hover{
+    color: #0F4C75;
+}
+
 .partyEdit {
-    text-decoration: none; color: black;
-}
-
-.partyManagePartyDrop {
-    text-decoration: none; color: black;
-}
-
-.partyManageMainCreate{
     text-decoration: none; color: black;
 }
 
@@ -98,8 +98,16 @@ main{
     color: #0F4C75;
 }
 
+.partyManagePartyDrop {
+    text-decoration: none; color: black;
+}
+
 .partyManagePartyDrop:hover {
     color: #0F4C75;
+}
+
+.partyManageMainCreate{
+    text-decoration: none; color: black;
 }
 
 .partyManageMainCreate:hover {
